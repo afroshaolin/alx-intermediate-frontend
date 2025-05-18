@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Grid Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-4">
+    <div class="grid grid-cols-3 gap-4">
+        <header class="col-span-3 flex justify-between items-center bg-gray-200 p-4">
+            <div>Logo</div>
+            <nav class="flex space-x-4">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        <aside class="bg-gray-300 p-4">Sidebar</aside>
+        <main class="col-span-2 bg-gray-400 p-4 flex flex-col space-y-4">
+            <h1>Main Content</h1>
+            <p>Some text here...</p>
+        </main>
+        <footer class="col-span-3 bg-gray-500 p-4 text-center">Footer</footer>
+    </div>
+</body>
+</html>

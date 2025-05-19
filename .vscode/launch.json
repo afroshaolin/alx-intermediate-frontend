@@ -45,8 +45,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open 3-index.html",
-            "file": "f:\\Users\\Teacher\\Desktop\\Git Repo\\alx-intermediate-frontend\\0x00-semantic_html\\3-index.html"
+            "name": "Open 3-nav_index.html",
+            "file": " F:\users\teacher\desktop\git` Repo\alx-intermediate-frontend\0x02-tailwind-css\1-index.html"
         }
     ]
 }

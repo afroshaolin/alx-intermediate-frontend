@@ -1,5 +1,6 @@
 # dependencies
 /node_modules
+../node_modules
 /.pnp
 .pnp.js
 .yarn/install-state.gz
@@ -42,6 +43,10 @@ next-env.d.ts
 
 # OS files
 Thumbs.db
+
+# Keep ESLint configs
+!../.eslintrc.json
+!../eslint.config.js
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 

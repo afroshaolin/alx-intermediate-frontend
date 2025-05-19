@@ -5,7 +5,9 @@
   "scripts": {
     "build": "npx tailwindcss@latest -i ./src/input.css -o ./dist/output.css --watch",
     "build:once": "npx tailwindcss@latest -i ./src/input.css -o ./dist/output.css -v",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,15 @@
   "description": "",
   "devDependencies": {
     "autoprefixer": "10.4.14",
-    "postcss": "8.4.23",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.28",
+    "postcss": "^8.5.3",
     "tailwindcss": "3.3.2"
+  },
+  "dependencies": {
+    "next": "^15.3.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5.8.3"
   }
 }

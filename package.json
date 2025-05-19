@@ -1,0 +1,27 @@
+{
+  "name": "alx-intermediate-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss@latest -i ./src/input.css -o ./dist/output.css --watch",
+    "build:once": "npx tailwindcss@latest -i ./src/input.css -o ./dist/output.css -v",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afroshaolin/alx-intermediate-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afroshaolin/alx-intermediate-frontend/issues"
+  },
+  "homepage": "https://github.com/afroshaolin/alx-intermediate-frontend#readme",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "10.4.14",
+    "postcss": "8.4.23",
+    "tailwindcss": "3.3.2"
+  }
+}

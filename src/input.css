@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (max-width: 768px) 
-{
-  main { grid-template-columns: 1fr; }
+
+@layer utilities {
+  @media (max-width: 768px) {
+    main {
+      display: grid; /* Ensure main is a grid container */
+      grid-template-columns: 1fr;
+    }
+  }
 }

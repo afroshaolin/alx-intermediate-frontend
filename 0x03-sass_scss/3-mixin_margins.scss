@@ -1,0 +1,13 @@
+// 3-mixin_margins.scss
+@mixin apply-margins($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+body {
+  @include apply-margins(10px, 10px);
+}
+
+div {
+  @include apply-margins(15px, 15px);
+}

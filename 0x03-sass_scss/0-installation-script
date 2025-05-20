@@ -1,0 +1,29 @@
+# 0-installation-script
+
+1. First, I created the directory where this SASS project will live. I was inside my alx-intermediate-frontend repo, and I typed:
+   mkdir 0x03-sass_scss
+   (It took me 3 tries because I kept forgetting the underscores 😅)
+
+2. I read that I needed to install Node.js version 20.16 on Ubuntu, so I followed the instructions from the task:
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+   I had no idea what this line was doing at first, but apparently it's installing NVM (Node Version Manager). Looked scary but worked.
+
+3. After that, I had to **close the terminal** using `exit` and open it again. I totally forgot to do this at first and couldn’t understand why nothing was working. Classic rookie mistake.
+
+4. Once the terminal was open again, I typed:
+   nvm install 20.16.0
+   Then ran: `node -v` to check the version. When I saw it printed `v20.16.0`, I felt like a genius (even though I had no idea what it meant yet 🤓).
+
+5. Next, I finally tried to install SASS using npm. I typed:
+   npm install sass -v 3.7.4
+   This took a few tries because at first I forgot to run `npm init -y` in the project folder — another thing I had to Google like 7 times.
+
+6. I had a moment of panic because I didn’t see anything change in my folder. Then I realized `node_modules` and `package-lock.json` were added, which meant it worked (yay!).
+
+7. To double-check, I ran:
+   npx sass --version
+   It showed me the version installed. I still wasn’t totally sure what this meant, but at least there were no red error messages.
+
+8. Honestly, as someone who’s still learning how to even type basic commands into a terminal, this whole thing took me **one full day**. I made lots of small mistakes. I didn’t know what to do when errors popped up. I typed prompts wrong so many times because I don’t know code yet. 
+
+Thank God for AI tools — without them, I think this would have taken me at least **23 days** to figure out. Even though it was tough and confusing, I’m proud that I got SASS installed, and I now understand a little more about what these tools do. On to the next task! 💻✨

@@ -38,6 +38,7 @@ html {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   /* 2 */
   -moz-tab-size: 4;
   /* 3 */
@@ -224,6 +225,7 @@ button,
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
+     appearance: button;
   /* 1 */
   background-color: transparent;
   /* 2 */
@@ -271,6 +273,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 
 [type='search'] {
   -webkit-appearance: textfield;
+     appearance: textfield;
   /* 1 */
   outline-offset: -2px;
   /* 2 */
@@ -683,6 +686,7 @@ video {
   display: block;
   -webkit-box-orient: horizontal;
   -webkit-line-clamp: none;
+  line-clamp: none;
 }
 
 .block {
@@ -995,7 +999,9 @@ video {
 
 .break-before-avoid-page {
   -moz-column-break-before: avoid;
-       break-before: avoid-page;
+  /* Fallback for Firefox */
+  break-before: avoid;
+  break-before: avoid-page;
 }
 
 .break-before-page {
@@ -1074,7 +1080,7 @@ video {
 
 .break-after-column {
   -moz-column-break-after: column;
-       break-after: column;
+  break-after: column;
 }
 
 .grid-flow-row {
@@ -2158,9 +2164,7 @@ video {
   mix-blend-mode: luminosity;
 }
 
-.mix-blend-plus-lighter {
-  mix-blend-mode: plus-lighter;
-}
+/* .mix-blend-plus-lighter removed due to lack of Opera support */
 
 .\!shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;

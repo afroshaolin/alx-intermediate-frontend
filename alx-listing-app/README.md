@@ -45,7 +45,7 @@ To effectively complete this project, you should have:
 
 Here's a breakdown of the core folders used in this project:
 
-## Project Structure (In-Depth)
+##Project Structure (In-Depth)
 This project is structured to promote scalability, reusability, and readability, aligning with modern frontend development standards. Here's a breakdown of the key directories and their roles in the ALX Listing App:
 
 ## components/

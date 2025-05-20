@@ -1021,7 +1021,7 @@ video {
 
 .break-before-column {
   -moz-column-break-before: column;
-       break-before: column;
+  break-before: column;
 }
 
 .break-inside-auto {

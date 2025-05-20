@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid and Flexbox Layout</title>
     <script src="https://cdn.tailwindcss.com"></script>
-            <style>
+    <link rel="stylesheet" href="../src/output.css">
+    <style>
         @media (max-width: 768px) {
             main {
+                display: grid;
                 grid-template-columns: 1fr;
             }
         }
@@ -19,17 +21,17 @@
     </header>
 
     <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
-        <section class="lg:col-span-2 flex">
+        <section class="lg:col-span-2 flex flex-wrap">
             <div class="w-1/2 bg-red-200 p-4">Flexbox Item 1</div>
             <div class="w-1/2 bg-red-400 p-4">Flexbox Item 2</div>
         </section>
         <aside class="bg-green-200 p-4">Sidebar</aside>
     </main>
-    <section class="grid grid-cols-3 gap-4 mt-4 md:grid-cols-3 sm:grid-cols-1">
-         <img src="image1.jpg" class="w-full h-auto" />
-         <img src="image2.jpg" class="w-full h-auto" />
-         <img src="image3.jpg" class="w-full h-auto" />
-</section>
+    <section class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+         <img src="image1.jpg" class="w-full h-auto" alt="Image 1" />
+         <img src="image2.jpg" class="w-full h-auto" alt="Image 2" />
+         <img src="image3.jpg" class="w-full h-auto" alt="Image 3" />
+    </section>
 
 
     <footer class="bg-gray-800 text-white p-4 mt-4">

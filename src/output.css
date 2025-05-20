@@ -402,8 +402,7 @@ embed,
 object {
   display: block;
   /* 1 */
-  vertical-align: middle;
-  /* 2 */
+  /* vertical-align removed because it has no effect on block elements */
 }
 
 /*
@@ -2304,6 +2303,7 @@ video {
 
 @media (max-width: 768px) {
   main {
+    display: grid;
     grid-template-columns: 1fr;
   }
 }

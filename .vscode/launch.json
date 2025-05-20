@@ -46,7 +46,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open 3-nav_index.html",
-            "file": " F:\users\teacher\desktop\git` Repo\alx-intermediate-frontend\0x02-tailwind-css\1-index.html"
+            "file": "F:\\Users\\Teacher\\Desktop\\Git Repo\\alx-intermediate-frontend\\0x02-tailwind-css\\1-index.html"
         }
     ]
 }

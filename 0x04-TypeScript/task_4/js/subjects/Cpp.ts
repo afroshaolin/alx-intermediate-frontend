@@ -1,11 +1,16 @@
 /// <reference path="./Subjects.ts" />
 
 namespace Subjects {
+    export class Subjects {
+        teacher!: Teacher;
+        static Subject: any;
+    }
+
     export interface Teacher {
         experienceTeachingC?: number;
     }
 
-    export class Cpp extends Subjects {
+    export class Cpp extends Subjects.Subject {
         teacher: Teacher;
 
         constructor(teacher?: Teacher) {

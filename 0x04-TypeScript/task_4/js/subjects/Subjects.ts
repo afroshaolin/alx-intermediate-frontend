@@ -1,7 +1,7 @@
-import { Teacher } from '../subjects/Teacher';
+import { Teacher } from './teacher';
 
 namespace Subjects {
-    export class Subject {
+    export class Subjects {
         teacher!: Teacher;
         setTeacher(teacher: Teacher): void {
             this.teacher = teacher;
@@ -9,7 +9,7 @@ namespace Subjects {
     }
 }
 
-export class Cpp extends Subjects.Subject {
+export class Cpp extends Subjects.Subjects {
     getRequirements() {
         return 'Here is the list of requirements for Cpp';
     }
@@ -20,7 +20,7 @@ export class Cpp extends Subjects.Subject {
     }
 }
 
-export class Java extends Subjects.Subject {
+export class Java extends Subjects.Subjects {
     getRequirements() {
         return 'Here is the list of requirements for Java';
     }
@@ -31,7 +31,7 @@ export class Java extends Subjects.Subject {
     }
 }
 
-export class React extends Subjects.Subject {
+export class React extends Subjects.Subjects {
     getRequirements() {
         return 'Here is the list of requirements for React';
     }
@@ -42,3 +42,12 @@ export class React extends Subjects.Subject {
     }
 }
 
+export class Subject extends Subjects.Subjects {
+    getRequirements(): string {
+        return 'Here is the list of requirements for the subject';
+    }
+
+    getAvailableTeacher(): string {
+        return 'No available teacher';
+    }
+}

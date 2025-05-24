@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Debug TypeScript File",
+      "program": "${workspaceFolder}/${input:tsFilePath}",
+      "runtimeArgs": [
+        "-r",
+        "ts-node/register"
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "tsFilePath",
+      "type": "promptString",
+      "description": "Enter the relative path to the TypeScript file you want to debug (e.g., task_0/main.ts or task_5/js/main.ts)"
+    }
+  ]
+}

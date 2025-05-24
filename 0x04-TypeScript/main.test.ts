@@ -1,5 +1,5 @@
-import { RowElement, RowID } from './interface';
-import * as CRUD from './crud.js';
+import { RowElement, RowID } from './task_3/interface.js';
+import * as CRUD from './task_3/crud.js';
 
 describe('main.ts logic', () => {
   const row: RowElement = {

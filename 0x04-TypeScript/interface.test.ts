@@ -1,4 +1,4 @@
-import { insertRow, deleteRow, updateRow, RowElement, RowID } from './interface';
+import { insertRow, deleteRow, updateRow, RowElement, RowID } from './task_3/interface';
 
 describe('interface.ts', () => {
   const row: RowElement = {

@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "start-dev": "npm run build && lite-server"
+  }
+}

@@ -1,4 +1,4 @@
-import { Java } from './Java';
+import { Java } from './0x04-TypeScript/task_4/js/subjects/Java';
 
 describe('Java', () => {
     let java: Java;

@@ -4,7 +4,8 @@
     "module": "es6",
     "rootDir": "./src",
     "outDir": "./dist",
-    "strict": true
+    "strict": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "../main copy.ts", "../main copy 2.ts"]
 }

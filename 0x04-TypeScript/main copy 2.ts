@@ -5,6 +5,10 @@ interface DirectorInterface {
 }
 
 interface TeacherInterface {
+    firstName: string;
+    lastName: string;
+    fullTimeEmployee: boolean;
+    location: string;
     workFromHome(): string;
     getCoffeeBreak(): string;
     workTeacherTasks(): string;
@@ -23,6 +27,23 @@ class Director implements DirectorInterface {
 }
 
 class Teacher implements TeacherInterface {
+    firstName: string;
+    lastName: string;
+    fullTimeEmployee: boolean;
+    location: string;
+
+    constructor(
+        firstName: string = 'John',
+        lastName: string = 'Doe',
+        fullTimeEmployee: boolean = true,
+        location: string = 'School'
+    ) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.fullTimeEmployee = fullTimeEmployee;
+        this.location = location;
+    }
+
     workFromHome(): string {
         return 'Cannot work from home';
     }

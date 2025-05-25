@@ -7,5 +7,5 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*", "../main copy.ts", "../main copy 2.ts"]
+  "include": ["src/**/*", "dist/**/*"]
 }

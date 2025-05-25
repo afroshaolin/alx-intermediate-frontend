@@ -1,13 +1,20 @@
-interface Teacher {
- firstName: string,
-    lastName: string,
-    fullTimeEmployee: boolean,
-    location: string,
-    yearsOfExperience?: number,
-    extra?: object 
+interface TeacherInterface {
+    firstName: string;
+    lastName: string;
+    fullTimeEmployee: boolean;
+    location: string;
+    yearsOfExperience?: number;
+    extra?: object;
 }
 
-class Teacher {
+class TeacherClass {
+  firstName: string;
+  lastName: string;
+  fullTimeEmployee: boolean;
+  location: string;
+  yearsOfExperience?: number;
+  extra?: object;
+
   constructor(
     firstName: string,
     lastName: string,
@@ -21,13 +28,13 @@ class Teacher {
     this.fullTimeEmployee = fullTimeEmployee;
     this.location = location;
     if (yearsOfExperience !== undefined) this.yearsOfExperience = yearsOfExperience;
-    Object.assign(this, extra);
+    if (extra !== undefined) Object.assign(this, extra);
   }
 }
 
 // Example usage:
-const teacher = new Teacher('John', 'Doe', true, 'NY', 10, { contract: true });
-console.log(teacher);
+const teacher1 = new TeacherClass('John', 'Doe', true, 'NY', 10, { contract: true });
+console.log(teacher1);
 
 // should print
 // Object
@@ -38,8 +45,11 @@ console.log(teacher);
 // location: "NY"
 // yearsOfExperience: 10
 
-interface Directors extends Teacher {
-  numberOfReports: number;
+interface Directors extends TeacherInterface {
+    numberOfReports: number;
+    workFromHome: () => string;
+    getCoffeeBreak: () => string;
+    workTeacherTasks: () => string;
 }
 
 const director1: Directors = {
@@ -48,6 +58,9 @@ const director1: Directors = {
   location: 'London',
   fullTimeEmployee: true,
   numberOfReports: 17,
+  workFromHome: () => 'Working from home',
+  getCoffeeBreak: () => 'Getting a coffee break',
+  workTeacherTasks: () => 'Working on teacher tasks',
 };
 console.log(director1);
 
